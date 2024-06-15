@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/icon_home"
+        android:id="@+id/home"
+        android:checked="true"
+       />
+
+
+
+    <item android:title="Post"
+        android:icon="@drawable/icon_logo"
+        android:id="@+id/post"
+        />
+
+
+
+    <item android:title="Perfil"
+        android:icon="@drawable/icon_perfil"
+        android:id="@+id/perfil"
+        />
+</menu>

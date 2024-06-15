@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".newPosting">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Toolbar
+                android:id="@+id/tollbar"
+                android:layout_width="413dp"
+                android:layout_height="130dp"
+                android:background="@drawable/toolbar_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtNameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Atividade"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.464"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        style="@style/Edit_text2"
+        android:layout_width="377dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="24dp"
+        android:hint="O que deseja postar para seus clientes?"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/roxo"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMidias"
+        style="@style/Button_borda_quad2"
+        android:layout_width="377dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/icon_img"
+        android:drawableRight="@drawable/seta_right"
+        android:text="Incluir mídia(s)"
+        android:textColor="@color/roxo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricao" />
+
+
+    <EditText
+        android:id="@+id/informarLocal"
+        style="@style/Edit_text3"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/icon_local"
+        android:drawablePadding="105dp"
+        android:editable="false"
+        android:hint="Local"
+        android:textAlignment="textStart"
+        android:textColor="@color/roxo"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCep" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProx"
+        style="@style/Button_quad_orange"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="172dp"
+        android:text="Próximo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informarLocal" />
+
+    <EditText
+        android:id="@+id/informarServico"
+        android:layout_width="362dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Informe o serviço"
+        android:inputType="text"
+        android:textColor="@color/roxo"
+        android:textSize="14sp"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informarLocal" />
+
+    <EditText
+        android:id="@+id/editCep"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+        android:hint="Digite o CEP"
+        android:inputType="text"
+        android:textColor="@color/roxo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMidias" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCEP"
+        style="@style/Button_fundo_orange"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:drawableLeft="@drawable/icon_search"
+        android:paddingLeft="20dp"
+        app:icon="@drawable/icon_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMidias" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

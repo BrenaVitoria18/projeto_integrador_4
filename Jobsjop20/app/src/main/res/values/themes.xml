@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Jobsjop20" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/laranja</item>
+        <item name="android:windowBackground">@color/laranja</item>
+    </style>
+
+    <style name="Theme.Jobsjop20" parent="Base.Theme.Jobsjop20">
+        <!-- Customize your theme here -->
+        <item name="android:windowBackground">@color/laranja</item>
+
+        <item name="windowSplashScreenAnimationDuration">3000</item>
+        <!-- Adicione outros itens de estilo conforme necessário -->
+    </style>
+
+
+</resources>

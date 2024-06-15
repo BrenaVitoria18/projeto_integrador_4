@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622798138964",
+    "project_id": "jobshop-c0e41",
+    "storage_bucket": "jobshop-c0e41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622798138964:android:8826eb5bcb6666f52ac7c1",
+        "android_client_info": {
+          "package_name": "com.ads.jobsjop20"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJEGU0DVGLywgdeGNCwGAI7kJWFb2IwU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
